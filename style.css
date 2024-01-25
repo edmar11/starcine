@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*header*/
+header{
+    background-color: #cfcfcf;
+    padding: 32px 16px;
+   
+}
+    .conteiner-header{
+        width: 1160px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    header .logo{
+        width: 30%;
+    }
+
+    header .menu{
+        width: 40%;
+    }
+
+    header .buscador{
+        width: 30%;
+    }
+
+/*banner*/
+.banner{
+    background-color: red;
+    height: 600px;
+    width: 100%;
+}
+
+section{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/*Em cartaz*/
+.em_cartaz{
+    width: 1160px;
+    padding: 32px 16px;
+    border: 1px solid #cfcfcf;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 16px;
+    border-radius: 16px;
+}
+    .cabecalho-em-cartaz{
+        width: 100%;
+        padding: 16px;
+        display: flex;
+    }
+
+    .cabecalho-em-cartaz .title{
+         width: 50%;
+    }
+
+    .cabecalho-em-cartaz .btn-ver-todos{
+        width: 50%;
+        text-align: right;
+    }
+
+/*Em breve*/
+.em_breve{
+    width: 1160px;
+    padding: 32px 16px;
+    border: 1px solid #cfcfcf;
+    margin: 32px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 16px;
+}
+
+    .cabecalho-em-breve{
+        padding: 16px;
+        display: flex;
+        width: 100%;
+    }
+        .cabecalho-em-breve .title{
+            width: 50%;
+        }
+
+        .cabecalho-em-breve .btn-ver-todos{
+            width: 50%;
+            text-align: right;
+        }
+
+    .card-filme{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #cfcfcf;
+        width: 280px;
+        height: 320px;
+        margin: 4px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .card-filme img{
+        width: 100%;
+        height: 220px;
+    }
+
+.filmes{
+    width: 100%;
+    display: flex;
+}
+
+.sobre-nos{
+    width: 1160px;
+    padding: 32px 16px;
+    background-color: #cfcfcf;
+    margin: 32px 16px;
+}
+
+button{
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+button:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+    .ver-todos{
+        color: red;
+
+    }
+
+    .ingressos{
+        background-color: red;
+        color:#fff;
+    }
+
+    .informacoes{
+        background-color: orange;
+    }
+
+    a:link :hover{
+        cursor: pointer;
+    }
+
+footer{
+    background-color: dimgray;
+    padding: 32px 16px;
+    height: 200px;
+}

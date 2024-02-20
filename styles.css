@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+}
+section.formulario{
+    padding: 60px 4%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea{
+     width: 100%;
+     background-color: rgba(255, 0, 0, 0.989);
+     border: 0;
+     outline: 0;
+     padding: 20px 15px;
+     border-radius: 15px;
+     color: #fff;
+     font-size: 18px;
+}
+
+form input::placeholder{
+    color: #fff;
+}
+form textarea::placeholder{
+    color: #fff;
+}
+form textarea{
+    resize: none;
+    max-height: 300px;
+}
+
+form .btnEnviar{
+    margin-top: 30px;
+    text-align: center;
+    max-height: 80px;
+   
+}
+
+form .btnEnviar input {
+    width: 120px;
+    background-color: darkorange;
+    color:black;
+    font font-weight: 700px;
+    cursor: pointer;
+  
+}

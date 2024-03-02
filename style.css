@@ -6,32 +6,36 @@
     font-size: 16px;
     font-family: Poppins;
 }
- /*header*/
- header{
+
+
+/*****Header****/
+header{
     background-color: #ffffff;
-    padding: 16px 0px;
+    padding: 16px 16px;
     box-shadow: 0px 3px 6px #000;
     z-index: 99;
 }
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-.conteiner-header{
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    .conteiner-header{
         width: 1160px;
         display: flex;
         margin: 0 auto;
     }
+
     header .logo{
         width: 20%;
     }
 
-
-         header .logo img{
+        header .logo img{
             width: 160px;
-    }
-     
+        }
+
     header .menu{
         width: 50%;
         align-items: center;
@@ -41,33 +45,34 @@
         justify-content: center;
     }
 
-         .menu-principal ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        gap: 24px;
-         }
+        .menu-principal ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            gap: 24px;
+        }
 
-         .menu-principal li a {
+        .menu-principal li a {
             font-weight: 600;
             font-size: 16px;
             text-transform: uppercase;
             color: #000000;
             text-decoration: none;
             padding: 16px 0px;
-         }
-         .menu-principal li a:hover {
-            border-bottom: 4px solid red;
         }
-     header .buscador{
+
+            .menu-principal li a:hover {
+                border-bottom: 4px solid red;
+            }
+
+    header .buscador{
         width: 30%;
         align-items: center;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        }
-
+    }
 
         .input-search{
             border: 1px solid #cfcfcf;
@@ -75,6 +80,7 @@
             outline: none;
             border-radius: 8px 0px 0px 8px;
         }
+
         .btn-search{
             border: 1px solid red;
             padding: 8px 16px;
@@ -83,28 +89,37 @@
             background-color: red;
             color:#fff
         }
-    /*banner*/
+
+/*****Banner*/
 .banner{
     background-image:url(img/john-wick-4-banner.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100px;
+    height: 800px;
     width: 100%;
     font-size: 48px;
     text-align: center;
     color: #fff;
 }
 
-  h1{
-    text-align: center;
+section{
+    width: 1160px;
     margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    padding: 20px 20px;
     font-size: 30px;
+    margin-top: 10px;
 }
 section.formulario{
-    padding: 60px 4%;
+    padding: 80px 4%;
     max-width: 500px;
     margin: 0 auto;
+    
 }
 
 form{
@@ -114,8 +129,8 @@ form{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
 }
-
 
 form input, form textarea{
      width: 100%;
@@ -127,6 +142,7 @@ form input, form textarea{
      color: #fff;
      font-size: 18px;
      transition: 0.2s
+     
 }
 
 form input::placeholder{
@@ -151,7 +167,7 @@ form .btnEnviar{
 
 form .btnEnviar input {
     width: 100px;
-    height: 40px;
+    height: 50px;
     background-color: darkorange;
     color:black;
     cursor:pointer;
@@ -163,3 +179,10 @@ form .btnEnviar input {
 
 }
 
+
+
+footer{
+    background-color: dimgray;
+    padding: 32px 16px;
+    height: 200px;
+}

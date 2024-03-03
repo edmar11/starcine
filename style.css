@@ -1,0 +1,49 @@
+.em-breve{
+    padding:32px 16px;
+    border:1px solid #cfcfcf;
+    border-radius:16px;
+    width:1160px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.filmes{
+    border:1px solid #cfcfcf;
+    border-radius:16px;
+    display:flex;
+    flex-wrap:wrap;
+    padding:16px;
+    margin-bottom:16px;
+}
+.titulo-filme{
+    width:100%;
+    margin-bottom:32px;
+}
+
+.titulo-filme h3{
+    color:red;
+    font-style:unset;
+    font-weight:bolder;
+}
+.titulo-filme span{
+    color: white;
+    background-color:red;
+    padding:4px 20px;
+    border-radius:8px;
+}
+
+.img-filme{
+    width:40%;
+    color:red;
+}
+.img-filme img{
+    width:360px;
+    height:420px;
+}
+.sobre-filme{
+    width:60%;
+}
+.sobre-filme button{
+ color:white;
+ background-color: red;
+}
+

@@ -241,5 +241,55 @@ button:hover{
 footer{
     background-color: dimgray;
     padding: 32px 16px;
-    height: 200px;
 }
+
+    footer .conteiner-footer{
+        width: 1160px;
+        display: flex;
+        margin: 0 auto;
+        gap: 1%;
+    }
+
+        footer .conteiner-footer div{
+            width: 100%;
+        }
+
+            footer .conteiner-footer .redes-sociais{
+                display: flex;
+                flex-direction: row;
+                gap: 24px;
+            }
+
+                footer .conteiner-footer .redes-sociais img{
+                    width: 32px;
+                    height: 32px;
+                }
+
+            footer .conteiner-footer ul li{
+                padding: 8px 0px;
+            }
+
+            footer .conteiner-footer ul li a{
+                font-size: 16px;
+                color: #000000;
+                text-decoration: none;
+            }
+
+                footer .conteiner-footer ul li a:hover{
+                    text-decoration: underline;
+
+                }
+
+            footer .conteiner-footer ul li::marker{
+                font-size: 0;
+            }
+
+    footer .copy{
+        border-top:1px solid #ffffff0a;
+        width: 1160px;
+        margin: 0 auto;
+        margin-top: 32px;
+        padding: 32px 16px;
+        text-align: center;
+        font-size: 12px;
+    }

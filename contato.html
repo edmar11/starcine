@@ -8,7 +8,7 @@
 
 </head>
 <body>
-            <header>Header</header>
+    <header class="sticky"></header>
         <section>
 
                 <div class="fale_conosco">
@@ -37,9 +37,22 @@
 
     </main>
 
-    <footer>
-        <p>footer</p>
-    </footer>
+    <footer></footer>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('header').innerHTML = data;
+            });
+        
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            });
+        </script>
     
 </body>
 </html>

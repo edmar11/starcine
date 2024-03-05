@@ -3,36 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css">
     <title>StarCine</title>
+
 </head>
 <body>
 
-    <header>
-        <p>Aqui será o header</p>
-    </header>
+    <header class="sticky"></header>
 
-    <main>
-        <h1>StarCine</h1>
-
-        <div>
-            <h2>Em cartaz</h2>
+       <main>
         
+
+        <div class="banner">
+                
         </div>
+            
+        <section>
 
-        <div>
-            <h2>Em breve</h2>
+            <div class="em_cartaz">
 
-        </div>
+                <div class="cabecalho-em-cartaz">
+                    <div class="title">
+                        <h2>EM CARTAZ</h2>
+                    </div>
 
-        <div>
-            <h2>Conheça nosso cinema</h2>
-        </div>
+                    <div class="btn-ver-todos">
+                        <a href="#"><button class="ver-todos">VER TODOS</button></a>
+                    </div>
+                </div>
+                
+                <div class="filmes">
+                    <div class="card-filme">
+                        <img src="img/john-wick-4-cartaz.jpg" alt="capa do filme">
+                        <a href="#"> <div class="ingressos">INGRESSOS</div></a>
+                    </div>
+        
+                    <div class="card-filme">
+                        <img src="img/john-wick-4-cartaz.jpg" alt="capa do filme">
+                        <a href="#"> <div class="ingressos">INGRESSOS</div></a>
+                    </div>
+        
+                    <div class="card-filme">
+                        <img src="img/john-wick-4-cartaz.jpg" alt="capa do filme">
+                        <a href="#"> <div class="ingressos">INGRESSOS</div></a>
+                    </div>
+        
+                    <div class="card-filme">
+                        <img src="img/john-wick-4-cartaz.jpg" alt="capa do filme">
+                        <a href="#"><div class="ingressos">INGRESSOS</div></a>
+                    </div>
+                </div>
 
+            </div>
+
+            <div class="em_breve">
+
+                <div class="cabecalho-em-breve">
+                    <div class="title">
+                        <h2>EM BREVE</h2>
+                    </div>
+
+                    <div class="btn-ver-todos">
+                        <a href="em-breve.html"><button class="ver-todos">VER TODOS</button></a>
+                    </div>
+                </div>
+
+                <div class="filmes">
+                    <div class="card-filme">
+                        <img src="img/farofeiros-2-cartaz.jpg" alt="capa do filme">
+                        <a href="#"><div class="informacoes">MAIS INFORMAÇÕES</div></a>
+                    </div>
+
+                    <div class="card-filme">
+                        <img src="img/farofeiros-2-cartaz.jpg" alt="capa do filme">
+                        <a href="#"><div class="informacoes">MAIS INFORMAÇÕES</div></a>
+                    </div>
+
+                    <div class="card-filme">
+                        <img src="img/farofeiros-2-cartaz.jpg" alt="capa do filme">
+                        <a href="#"><div class="informacoes">MAIS INFORMAÇÕES</div></a>
+                    </div>
+
+                    <div class="card-filme">
+                        <img src="img/farofeiros-2-cartaz.jpg" alt="capa do filme">
+                        <a href="#"><div class="informacoes">MAIS INFORMAÇÕES</div></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sobre-nos">
+                <h2>Em breve mais informações sobre o StarCine</h2>
+            </div>
+        </section>
+        
     </main>
+    <footer></footer>
 
-    <footer>
-        <p>Aqui será o footer</p>
-    </footer>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('header').innerHTML = data;
+            });
+        
+        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('footer').innerHTML = data;
+            });
+        </script>
     
 </body>
 </html>

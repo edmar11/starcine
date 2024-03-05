@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_embreve.css">
     <title>EM BREVE</title>
 </head>
 <body>
-
+    <header class="sticky"></header>
 <div class="em-breve">
     <h1>EM BREVE</h1>
     <div class="filmes">
@@ -93,7 +93,21 @@ Ao lado de sua melhor amiga Katie, ela agora precisa lutar para manter o control
     </div>
 
 </div>
+<footer></footer>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector('header').innerHTML = data;
+        });
 
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector('footer').innerHTML = data;
+        });
+    </script>
 
 
     

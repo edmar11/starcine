@@ -1,0 +1,123 @@
+
+section{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    padding: 15px 15px;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section.formulario{
+    padding: 80px 4%;
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    border-bottom: #1b0505;
+   
+}
+
+
+
+form input, form textarea{
+     width: 100%;
+     background-color:red;
+     border: 0;
+     outline: 0;
+     padding: 18px 18px;
+     border-radius: 15px;
+     color:white;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 18px;
+     transition: 0.2s
+
+     
+}
+
+form input::placeholder{
+    color: #fff;
+}
+form textarea::placeholder{
+    color: #fff;
+    
+}
+
+form textarea{
+    resize: none;
+    height: 100px;
+}
+
+button {
+    margin-top: 30px;
+    text-align: center;
+    max-height: 50px;
+    width: 100%;
+     background-color: rgba(255, 0, 0, 0.989);
+     border: 0;
+     outline: 0;
+     padding: 20px 15px;
+     border-radius: 15px;
+     color: #fff;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 16px;
+     transition: 0.2s
+
+     
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color:orange;
+    color:black;
+    cursor:pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 0 auto;
+    border: #1b0505;
+
+}
+button:hover {
+    background-image:rgb(255, 136, 0);
+    color: white;
+    border: 1px solid #fff;
+  }
+
+.error {
+    font-size: 14px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+
+  }
+
+  .invalid {
+    border: 5px solid red
+    
+  }
+
+
+.error-hidden {
+    display: none;
+  }
+
+  .thanks {
+    padding: 40px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

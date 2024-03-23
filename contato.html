@@ -3,56 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_contato.css">
-    <title>StarCine</title>
+    <link rel="stylesheet" href="contato.css">
+    <script src = "script.js" defer></script>
+     <title>Contato StarCine</title>
 
 </head>
 <body>
     <header class="sticky"></header>
-        <section>
-
+    <main>
+    <section>   
                 <div class="fale_conosco">
                     <div class="interface">
                         <h1>Fale Conosco</h1>
                     </div>
 
-
-                </div>
-                
-                <form action="">
+         
+        <form id="form">
+                    <input name='name'type="text"  id="nome" placeholder =" Seu nome:">
+                    <p class="error error-hidden">O nome é obrigatório.</p>
             
-                    <input type="text" id="nome" placeholder =" Seu nome:" required> 
-                    <input type="text" id="e-mail" placeholder =" Seu e-mail:" required>
-                    <input type="text" id="tel" placeholder =" Seu telefone:">
+                    
+                    <input email='email' type="email" id="email" placeholder =" Seu e-mail:">
+                    <p class="error error-hidden">O e-mail é inválido.</p>
+            
+                    <input type="text" id="tel" placeholder =" Seu telefone:" >
+                    <p class="error error-hidden"> Por favor informe o seu telefone.</p>
+
                     <input type="text" id="assunto" placeholder ="Assunto">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <p class="error error-hidden">O assunto é obrigatório.</p> 
+
+                    <textarea id="mensagem" placeholder="Sua mensagem" ></textarea> 
+                    <p class="error error-hidden">Sua mensagem é obrigatória.</p>
+
+                    <hr />
+
+            <button type="submit">Enviar</button>   
+        </form>
+        <div class="thanks error-hidden" id="thanks">
+            <h2>Obrigado pelo seu contato!</h2>
+        </div>
+           
         
-                    <div class="btnEnviar"> <input type="submit" value="Enviar"></div>
-                </div>
+</section> 
 
-            
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer></footer>
-
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector('header').innerHTML = data;
-            });
-        
-        
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector('footer').innerHTML = data;
-            });
-        </script>
-    
+</main>
+    <footer>Footer</footer>
+   
 </body>
 </html>

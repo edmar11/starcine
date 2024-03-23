@@ -59,7 +59,6 @@ form.addEventListener('submit', (e) => {
     if(isValidForm){
         form.remove
         message.classList.remove('error-hidden')
-        console.log('Validou e enviou')
     }
 
 })
@@ -79,6 +78,6 @@ inputTelefone.addEventListener("input", () => {
     resetInput(inputTelefone)
 })
 
-inputAssuntoaddEventListener("input", () => {
+inputAssunto.addEventListener("input", () => {
     resetInput(inputAssunto)
 })

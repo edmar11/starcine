@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="carousel.css">
+    <script src="carousel.js"></script>
     <title>StarCine</title>
 
 </head>
@@ -15,7 +17,22 @@
         
 
         <div class="banner">
-                
+            <main class="carousel-container">
+                <div class="carousel">
+                  <div class="item active">
+                    <img src="img/john-wick-4-banner.jpg" alt="Image 1" />
+                  </div>
+                  <div class="item">
+                    <img src="img/banner god x kong.jpg" alt="Image 2" />
+                  </div>
+                  <div class="item">
+                    <img src="img/banner Bob-Marley-One-Love.jpg" alt="Image 3" />
+                  </div>
+                </div>
+                <button class="btn prev">ANTERIOR</button>
+                <button class="btn next">PRÓXIMA</button>
+                <div class="dots"></div>
+              </main>
         </div>
             
         <section>
@@ -75,17 +92,17 @@
                     </div>
 
                     <div class="card-filme">
-                        <img src="img/farofeiros-2-cartaz.jpg" alt="capa do filme">
+                        <img src="img/God.jpg" alt="capa do filme">
                         <a href="#"><div class="informacoes">MAIS INFORMAÇÕES</div></a>
                     </div>
 
                     <div class="card-filme">
-                        <img src="img/farofeiros-2-cartaz.jpg" alt="capa do filme">
+                        <img src="img/Bruno.jpg" alt="capa do filme">
                         <a href="#"><div class="informacoes">MAIS INFORMAÇÕES</div></a>
                     </div>
 
                     <div class="card-filme">
-                        <img src="img/farofeiros-2-cartaz.jpg" alt="capa do filme">
+                        <img src="img/Bruxa.jpg" alt="capa do filme">
                         <a href="#"><div class="informacoes">MAIS INFORMAÇÕES</div></a>
                     </div>
 
@@ -95,6 +112,29 @@
 
             <div class="sobre-nos">
                 <h2>Em breve mais informações sobre o StarCine</h2>
+            </div>
+
+            <div class="newsletter">
+                <h2>Assine nossa lewsletter</h2>
+        
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                    </div>
+                    <button type="submit">Enviar</button>
+
+                    
+                </form>
+                <span id="emailError" class="error"></span>
+                <div class="message" id="message"></div>
+                <script src="validador-email.js"></script>
+        
             </div>
         </section>
         

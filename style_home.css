@@ -92,10 +92,10 @@ header{
 
 /*banner*/
 .banner{
-    background-image:url(img/john-wick-4-banner.jpg);
+    /* background-image:url(img/john-wick-4-banner.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     height: 800px;
     width: 100%;
     font-size: 48px;
@@ -188,6 +188,63 @@ section{
     margin: 32px 16px;
 }
 
+
+.newsletter{
+    width: 1160px;
+    margin: 32px 16px;
+    padding: 48px 16px 24px 16px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #C0C0C0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .newsletter h2 {
+        width: 100%;
+    }
+
+    .newsletter form{
+        display: flex;
+        gap: 16px;
+        margin: 0 auto;
+        margin-top: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .newsletter form label{
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px;
+        }
+    
+        .newsletter form input{
+            padding: 8px 16px;
+            border: 1px solid #0000000a;
+            outline: none;
+            border-radius: 8px;
+        }
+
+        
+        .newsletter form button{
+            padding: 8px 16px;
+            background-color: red;
+            padding: 8px 32px;
+            color: #fff;
+        }
+
+        .newsletter span{
+            width: 100%;
+            font-size: 14px;
+            padding: 32px;
+            margin: 0 auto;
+
+        }
+
 button{
     padding: 8px 32px;
     border-radius: 8px;
@@ -247,6 +304,7 @@ footer{
         display: flex;
         margin: 0 auto;
         gap: 1%;
+        padding: 32px 16px;
     }
 
         footer .conteiner-footer div{
